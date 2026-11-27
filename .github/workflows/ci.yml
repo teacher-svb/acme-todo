@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  run_tests:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Code ophalen
