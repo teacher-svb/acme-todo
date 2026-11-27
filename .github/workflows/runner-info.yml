@@ -6,9 +6,6 @@ jobs:
   info:
     runs-on: ubuntu-latest
     steps:
-      - name: Code ophalen
-        uses: actions/checkout@v7
-
       - name: Hostname
         run: hostname
 
