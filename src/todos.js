@@ -15,7 +15,7 @@ function createStore() {
     complete(id) {
       const todo = todos.find((t) => t.id === id);
       if (todo) {
-        todo.status = 'FINISHED';
+        todo.status = 'DONE';
       }
       return todo;
     },
