@@ -1,0 +1,26 @@
+name: Runner info
+
+on: push
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code ophalen
+        uses: actions/checkout@v7
+
+      - name: Hostname
+        run: hostname
+
+      - name: Gebruiker
+        run: whoami
+
+      - name: Besturingssysteem
+        run: |
+          uname -a
+          cat /etc/os-release
+
+      - name: Inhoud van de werkmap
+        run: |
+          pwd
+          ls -la
